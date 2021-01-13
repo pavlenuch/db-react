@@ -34,7 +34,4 @@ ItemList.propTypes = {
   children: PropTypes.func.isRequired
 }
 
-
-// const { getAllPeople } = new SwapiService();
-
 export default ItemList;

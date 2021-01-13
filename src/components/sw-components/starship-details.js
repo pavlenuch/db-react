@@ -1,6 +1,5 @@
 import React from 'react';
 import ItemDetails, { Record } from '../item-details/item-details';
-// import { SwapiServiceConsumer } from '../swapi-service-context';
 import { withSwapiService } from '../hoc-helper';
 
 const StarshipDetails = ( props ) => {
@@ -21,4 +20,3 @@ const mapMethodToProps = (swapiService) => {
 };
 
 export default withSwapiService(mapMethodToProps)(StarshipDetails)
-// export default StarshipDetails;

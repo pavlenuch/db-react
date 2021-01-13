@@ -1,13 +1,3 @@
-// fetch('https://swapi.dev/api/people/1/')
-//     .then((res)=>{
-//         return res.json();
-//     })
-//     .then((body)=>{
-//         console.log(body)
-//     })
-//     .catch((err)=>{
-//         console.error(err)
-//     })
 export default class SwapiService {
     _apiBase = 'https://swapi.dev/api';
     _imageBase = 'https://starwars-visualguide.com/assets/img';
@@ -93,10 +83,3 @@ export default class SwapiService {
         }
     }
 }
-
-// const swapi = new SwapiService();
-// swapi.getPerson(3).then((p)=>{
-//     // people.forEach((p)=>{
-//         console.log(p.name);
-//     // })
-// })

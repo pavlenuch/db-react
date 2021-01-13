@@ -40,9 +40,7 @@ export default class ItemDetails extends Component {
       return;
     }
 
-    // this.swapiService
     getData(itemId)
-      // .getPerson(itemId)
       .then((item) => {
         this.setState({
           item,

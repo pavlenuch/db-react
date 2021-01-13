@@ -25,11 +25,6 @@ export default class RandomPlanet extends Component {
     error: false
   };
 
-  // constructor(){
-  //   super();
-  //   console.log('constructor')
-  // }
-
   componentDidMount() {
     const { updateInterval } = this.props;
     this.updatePlanet();
@@ -53,7 +48,6 @@ export default class RandomPlanet extends Component {
   }
 
   updatePlanet = () => {
-    // console.log('updatePlanet')
     const id = Math.floor(Math.random()*17)+3;
     this.swapiService
       .getPlanet(id)
@@ -62,7 +56,6 @@ export default class RandomPlanet extends Component {
   };
 
   render() {
-    // console.log('render')
     const { planet, loading, error } = this.state;
 
     const hasData = !(loading || error)
@@ -83,11 +76,6 @@ export default class RandomPlanet extends Component {
     );
   }
 }
-
-// вместо этого вверху в классе используется static
-// RandomPlanet.defaultProps = {
-//   updateInterval: 10000
-// }
 
 const PlanetView = ({ planet }) => {
 
